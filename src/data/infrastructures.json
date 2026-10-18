@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Spikify",
+    "description": "Convert your data into spike-based signals for efficient and biologically-inspired spiking neural network applications.",
+    "logo": "spikify.svg",
+    "docsLink": "https://spikify.readthedocs.io/en/stable/",
+    "type": "tool"
+  },
+  {
+    "id": 2,
+    "name": "NeuroBench",
+    "description": "A framework for benchmarking neuromorphic computing algorithms and systems.",
+    "logo": "neurobench.svg",
+    "docsLink": "https://neurobench.readthedocs.io/en/latest/",
+    "type": "tool"
+  },
+  {
+    "id": 3,
+    "name": "NIR",
+    "description": "A set of computational primitives shared across different neuromorphic frameworks and technology stacks.",
+    "logo": "nir.svg",
+    "docsLink": "https://neuroir.org/docs/",
+    "type": "tool"
+  },
+  {
+    "id": 4,
+    "name": "snn4csp",
+    "description": "Efficient solution validation of constraint satisfaction problems on neuromorphic hardware.",
+    "logo": "snn4csp.svg",
+    "docsLink": "https://github.com/neuromorphic-polito/snn4csp",
+    "type": "tool"
+  },
+  {
+    "id": 5,
+    "name": "Faery",
+    "description": "A lightweight library for reading, converting and visualizing event-based neuromorphic data.",
+    "logo": "faery.svg",
+    "docsLink": "https://aestream.github.io/faery/",
+    "type": "tool"
+  },
+  {
+    "id": 6,
+    "name": "GeNN",
+    "description": "A GPU-enhanced neuronal networks simulator for designing and simulating spiking neural networks.",
+    "logo": "genn.svg",
+    "docsLink": "https://genn-team.github.io",
+    "type": "tool"
+  },
+  {
+    "id": 7,
+    "name": "PySpiNNaker2",
+    "description": "A Python tool for running real-time spiking neural networks on the SpiNNaker2 neuromorphic platform.",
+    "logo": "pyspinnaker2.svg",
+    "docsLink": "https://spinnaker2.gitlab.io/py-spinnaker2/",
+    "type": "tool"
+  },
+  {
+    "id": 8,
+    "name": "Lava",
+    "description": "An open-source framework for developing neuro-inspired algorithms for conventional and neuromorphic hardware.",
+    "logo": "lava.svg",
+    "docsLink": "https://lava-nc.org",
+    "type": "tool"
+  },
+  {
+    "id": 9,
+    "name": "MetaTF",
+    "description": "A light TensorFlow library for building bio-inspired learning dynamics in artificial models.",
+    "logo": "metatf.svg",
+    "docsLink": "https://doc.brainchipinc.com",
+    "type": "tool"
+  },
+  {
+    "id": 10,
+    "name": "SpiNNaker2",
+    "description": "A large-scale neuromorphic computing platform based on ARM cores, ideal for real-time SNN simulation and research.",
+    "logo": "spinnaker2_hw.svg",
+    "docsLink": "https://spinncloud.com",
+    "type": "hardware"
+  },
+  {
+    "id": 11,
+    "name": "STM32 Series",
+    "description": "STM32 Microcontrollers with X-CUBE-AI library enabling embedded neuromorphic edge processing for IoT applications.",
+    "logo": "stm32.svg",
+    "docsLink": "https://stm32ai.st.com",
+    "type": "hardware"
+  },
+  {
+    "id": 12,
+    "name": "BrainChip",
+    "description": "Energy-efficient neuromorphic processor featuring event-based computation and on-chip learning for edge AI applications.",
+    "logo": "brainchip.svg",
+    "docsLink": "https://brainchip.com/akida-1500/",
+    "type": "hardware"
+  },
+  {
+    "id": 13,
+    "name": "NVIDIA Jetson",
+    "description": "A family of embedded AI computing platforms designed for edge AI applications, enabling real-time deep learning inference.",
+    "logo": "jetson.svg",
+    "docsLink": "https://developer.nvidia.com/embedded/jetson-modules",
+    "type": "hardware"
+  },
+  {
+    "id": 14,
+    "name": "Xilinx ZYNQ2",
+    "description": "FPGAs and SoC platforms enabling ultra-low latency SNN inference with custom hardware acceleration for embedded AI systems.",
+    "logo": "zynq.svg",
+    "docsLink": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-u1-zcu102-g.html",
+    "type": "hardware"
+  }
+]

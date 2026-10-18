@@ -1,0 +1,612 @@
+[
+  {
+    "id": 6,
+    "title": "The neurobench framework for benchmarking neuromorphic computing algorithms and systems",
+    "year": "2025",
+    "tags": "benchmarking - framework - systems - neuromorphic computing",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.nature.com/articles/s41467-025-56739-4",
+    "notebookLmLink": null
+  },
+  {
+    "id": 5,
+    "title": "Path Integral Quantum Annealing Optimizations Validated on 0-1 Multidimensional Knapsack Problem",
+    "year": "2025",
+    "tags": "combinatorial optimization - metaheuristics - multidimensional knapsack problem",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 4,
+    "title": "ON-OFF neuromorphic ISING machines using Fowler-Nordheim annealers",
+    "year": "2025",
+    "tags": "optimization - ISING machine - Fowler-Nordheim - hardware architecture",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.nature.com/articles/s41467-025-58231-5",
+    "notebookLmLink": null
+  },
+  {
+    "id": 3,
+    "title": "Neu-BrAuER: A Neuromorphic Braille Letters Audio-Reader for Commercial Edge Devices",
+    "year": "2025",
+    "tags": "Braille - Edge Devices - LIF Neurons - Neuromorphic - Spiking Neural Network",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 2,
+    "title": "Heterogeneity and evolution of DNA mutation rates in microsatellite stable colorectal cancer",
+    "year": "2025",
+    "tags": "",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 1,
+    "title": "A LIF-based Legendre Memory Unit as neuromorphic State Space Model benchmarked on a second-long spatio-temporal task",
+    "year": "2025",
+    "tags": "event-based - leaky integrate-and-fire - Legendre memory unit - state space model - time series",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 11,
+    "title": "WIN-GUI: A graphical tool for neuron-based encoding",
+    "year": "2024",
+    "tags": "Development tool - Graphical user interface - Neuromorphic - Robotics - Spike encoding",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.sciencedirect.com/science/article/pii/S2352711024001304?via%3Dihub",
+    "notebookLmLink": null
+  },
+  {
+    "id": 10,
+    "title": "Neuromorphic intermediate representation: A unified instruction set for interoperable brain-inspired computing",
+    "year": "2024",
+    "tags": "instruction set - brain-inspired computing - interoperable",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.nature.com/articles/s41467-024-52259-9",
+    "notebookLmLink": null
+  },
+  {
+    "id": 9,
+    "title": "Natively Neuromorphic LMU Architecture for Encoding-Free SNN-Based HAR on Commercial Edge Devices",
+    "year": "2024",
+    "tags": "Edge devices - Encoding-free - IoT - Legendre memory unit",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 8,
+    "title": "An Ensemble Method for Calling and Ranking Somatic Structural Variants Using Long and Short Reads",
+    "year": "2024",
+    "tags": "ensemble methods for somatic SVs calling - long-read somatic SVs callers",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://dl.acm.org/doi/10.1145/3700666.3700694",
+    "notebookLmLink": null
+  },
+  {
+    "id": 7,
+    "title": "A Time-synchronized Framework for Bluetooth Low Energy Wireless Sensor Networks",
+    "year": "2024",
+    "tags": "BLE - Bluetooth Low Energy - Time Synchronization - Wireless Sensor Networks",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 15,
+    "title": "Review of open neuromorphic architectures and a first integration in the RISC-V PULP platform",
+    "year": "2023",
+    "tags": "Configuration on Edge - Neuromorphic Engineering - Neuromorphic Hardware - RISC-V SoC",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 14,
+    "title": "First steps towards micro-benchmarking the Lava-Loihi neuromorphic ecosystem",
+    "year": "2023",
+    "tags": "Benchmarking - Lava - Loihi - Neuromorphic",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 13,
+    "title": "EGASubmitter: A software to automate submission of nucleic acid sequencing data to the European Genome-phenome Archive",
+    "year": "2023",
+    "tags": "automated workflows - DNA sequencing - EGA - FAIR - metadata - raw data submission",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2023.1143014/full#share",
+    "notebookLmLink": null
+  },
+  {
+    "id": 12,
+    "title": "Editorial: Powering the next-generation IoT applications: new tools and emerging technologies...",
+    "year": "2023",
+    "tags": "brain-inspired computational primitives - neuromorphic computing - neuromorphic engineering - sensory fusion",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1197918/full",
+    "notebookLmLink": null
+  },
+  {
+    "id": 21,
+    "title": "Spike encoding techniques for IoT time-varying signals benchmarked on a neuromorphic classification task",
+    "year": "2022",
+    "tags": "benchmarking - event based encoding - IoT applications - neuromorphic computing",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.999029/full",
+    "notebookLmLink": null
+  },
+  {
+    "id": 20,
+    "title": "MirGeneDB 2.1: Toward a complete sampling of all major animal phyla",
+    "year": "2022",
+    "tags": "genomics - animals - phyla - sequencing",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://academic.oup.com/nar/article/50/D1/D204/6439665",
+    "notebookLmLink": null
+  },
+  {
+    "id": 19,
+    "title": "LaRA 2: parallel and vectorized program for sequence–structure alignment of RNA sequences",
+    "year": "2022",
+    "tags": "Algorithms - Bioinformatics - Integer linear program - Parallel computing - RNA",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1186%2Fs12859-021-04532-7",
+    "notebookLmLink": null
+  },
+  {
+    "id": 18,
+    "title": "Human activity recognition: suitability of a neuromorphic approach for on-edge AIoT applications",
+    "year": "2022",
+    "tags": "artificial intelligence of things - edge computing - human activity recognition - spiking neural network",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/?ssa=150d98bd-a9a4-4b8f-bf28-b3a951c5c2ff&ssb=43092293723&ssc=https%3A%2F%2Fiopscience.iop.org%2Farticle%2F10.1088%2F2634-4386%2Fac4c38&ssi=1b164962-cnvj-4b48-859e-423f02572dfd&ssk=botmanager_support@radware.com&ssm=85181484587465728105936091872627&ssn=9695f6286ace0baf40f85c7afa644ee20d475bdf7af0-231c-478b-b85251&sso=2b5a9bc2-cbc6854957feaa64a2a539d96e2688bbe00da79d9d4a2e8b&ssp=46299700181790598876179054805446687&ssq=68690473841087904206738410464844204671968&ssr=MTc2LjIzNC4yMjIuMTM4&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/605.1.15%20(KHTML,%20like%20Gecko)%20Version/26.6.2%20Safari/605.1.15&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMTczY2U5ZmUtZWRiYS00ZWNmLTllYjQtODg1M2NjYzZlMjIyMS0xNzkwNTM4NDEwOTYwMC0wMDYyMjRkZmMwNTQ4Y2NmYjQ1MTAiLCJfX3V6bWYiOiI3ZjkwMDA1YmRmN2FmMC0yMzFjLTQ3OGItYmJjMi1jYmM2ODU0OTU3ZmUxLTE3OTA1Mzg0MTA5NjAwLTAwNWQzYWM1MmUxOGU1OTgxNDMxMCIsInJkIjoiaW9wLm9yZyJ9",
+    "notebookLmLink": null
+  },
+  {
+    "id": 17,
+    "title": "Braille letter reading: A benchmark for spatio-temporal pattern recognition on neuromorphic hardware",
+    "year": "2022",
+    "tags": "benchmarking - Braille reading - event-based encoding - neuromorphic hardware",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.951164/full",
+    "notebookLmLink": null
+  },
+  {
+    "id": 16,
+    "title": "A SOA-Based Engineering Process Model for the Life Cycle Management of System-of-Systems in Industry 4.0",
+    "year": "2022",
+    "tags": "Eclipse Arrowhead framework - engineering process model - Industry 4.0 - Internet of Things (IoT)",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.mdpi.com/2076-3417/12/15/7730",
+    "notebookLmLink": null
+  },
+  {
+    "id": 28,
+    "title": "PhyliCS: a Python library to explore scCNA data and quantify spatial tumor heterogeneity",
+    "year": "2021",
+    "tags": "Algorithms - Cancer evolution - Clones - DNA - Single-cell sequencing",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://link.springer.com/article/10.1186/s12859-021-04277-3",
+    "notebookLmLink": null
+  },
+  {
+    "id": 27,
+    "title": "Pagerank implemented with the mpi paradigm running on a many-core neuromorphic platform",
+    "year": "2021",
+    "tags": "Benchmarking neuromorphic HW - MPI for neuromorphic HW - PageRank",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.mdpi.com/2079-9268/11/2/25",
+    "notebookLmLink": null
+  },
+  {
+    "id": 26,
+    "title": "Optimizing Quality Inspection and Control in Powder Bed Metal Additive Manufacturing",
+    "year": "2021",
+    "tags": "Additive manufacturing (AM) - in situ monitoring - Industry 4.0 - metal 3-D printing",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 25,
+    "title": "Modeling an Industrial Revolution: How to Manage Large-Scale, Complex IoT Ecosystems?",
+    "year": "2021",
+    "tags": "digital twin modeling - industrial IoT design - system-of-systems modeling",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 24,
+    "title": "Flexible on-line reconfiguration of multi-core neuromorphic platforms",
+    "year": "2021",
+    "tags": "Application Command Protocol - Multi-core - Neuromorphic - Spiking Neural Network",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 23,
+    "title": "Exploration of Convolutional Neural Network models for source code classification",
+    "year": "2021",
+    "tags": "Code mapping - Deep learning - Heterogeneous platforms - LLVM-IR",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://iris.polito.it/handle/11583/2687168",
+    "notebookLmLink": null
+  },
+  {
+    "id": 22,
+    "title": "Configuring an Embedded Neuromorphic Coprocessor Using a RISC-V Chip for Enabling Edge Computing Applications",
+    "year": "2021",
+    "tags": "Neuromorphic Engineering, Neuromorphic hardware, RISC V SoC, Rocket Chip",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 109,
+    "title": "Unification of miRNA and isomiR research: The mirGFF3 format and the mirtop API",
+    "year": "2020",
+    "tags": "",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://academic.oup.com/bioinformatics/article/36/3/698/5556118",
+    "notebookLmLink": null
+  },
+  {
+    "id": 108,
+    "title": "Techniques for improving localization applications running on low-cost IoT devices",
+    "year": "2020",
+    "tags": "Automotive · Global positioning system (GPS) · GPS/INS Integration · IMU · Inertial navigation system · IoT · Localization · Micro electro mechanical systems (MEMS) · Tracker ·",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 107,
+    "title": "Predicting the Oncogenic Potential of Gene Fusions Using Convolutional Neural Networks",
+    "year": "2020",
+    "tags": "Convolutional Neural Networks · Deep learning · Gene fusions ·",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 106,
+    "title": "DEEPrior: A deep learning tool for the prioritization of gene fusions",
+    "year": "2020",
+    "tags": "",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://academic.oup.com/bioinformatics/article/36/10/3248/5722203",
+    "notebookLmLink": null
+  },
+  {
+    "id": 105,
+    "title": "BioSeqZip: A collapser of NGS redundant reads for the optimization of sequence analysis",
+    "year": "2020",
+    "tags": "",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://academic.oup.com/bioinformatics/article/36/9/2705/5717961",
+    "notebookLmLink": null
+  },
+  {
+    "id": 104,
+    "title": "An Engineering Process model for managing a digitalised life-cycle of products in the Industry 4.0",
+    "year": "2020",
+    "tags": "",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 113,
+    "title": "Exploiting gene expression profiles for the automated prediction of connectivity between brain regions",
+    "year": "2019",
+    "tags": "Allen Mouse Brain Atlas · Brain connectivity · Classification · Gene expression · Machine learning · Prediction ·",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.mdpi.com/1422-0067/20/8/2035",
+    "notebookLmLink": null
+  },
+  {
+    "id": 112,
+    "title": "Dealing with lack of training data for convolutional neural networks: The case of digital pathology",
+    "year": "2019",
+    "tags": "Computer-aided diagnosis systems · Convolutional neural networks · Deep learning · Histological image analysis · Transfer learning ·",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.mdpi.com/2079-9292/8/3/256",
+    "notebookLmLink": null
+  },
+  {
+    "id": 111,
+    "title": "Code mapping in heterogeneous platforms using deep learning and LLVM-IR",
+    "year": "2019",
+    "tags": "Code Mapping · Deep Learning · Embedded Platforms · Heterogeneous Platforms · LLVM-IR ·",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 110,
+    "title": "A deep learning approach to the screening of oncogenic gene fusions in humans",
+    "year": "2019",
+    "tags": "Convolutional neural networks (CNN) · Deep learning · Gene fusion detection tools · Gene fusions · Machine learning · Oncogenic probability value · Protein function ·",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.mdpi.com/1422-0067/20/7/1645",
+    "notebookLmLink": null
+  },
+  {
+    "id": 30,
+    "title": "Benchmarking a many-core neuromorphic platform with an MPI-based DNA sequence matching algorithm",
+    "year": "2019",
+    "tags": "Benchmarking neuromorphic HW - Boyer-moore - DNA matching algorithm",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.mdpi.com/2079-9292/8/11/1342",
+    "notebookLmLink": null
+  },
+  {
+    "id": 29,
+    "title": "Battery-Aware operation range estimation for terrestrial and aerial electric vehicles",
+    "year": "2019",
+    "tags": "Battery non-ideality - Electric vehicles - Energy-efficient scheduling - State of charge",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 35,
+    "title": "Work-in-Progress: Multiple Alignment of Packet Sequences for Efficient Communication in a Many-Core Neuromorphic System",
+    "year": "2018",
+    "tags": "packet sequences - many-core neuromorphic - communication optimization",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 34,
+    "title": "Work-in-Progress: Impact of Graph Partitioning on SNN Placement for a Multi-Core Neuromorphic Architecture",
+    "year": "2018",
+    "tags": "graph partitioning - SNN placement - neuromorphic multi-core",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 33,
+    "title": "Optimizing Network Traffic for Spiking Neural Network Simulations on Densely Interconnected Many-Core Neuromorphic Platforms",
+    "year": "2018",
+    "tags": "many-core SoC - Neuromorphic platform - partitioning and placement - profiling methodology - spiking neural network",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 32,
+    "title": "Directed Graph Placement for SNN Simulation into a multi-core GALS Architecture",
+    "year": "2018",
+    "tags": "GALS architecture - graph placement - SNN simulation - multi-core",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 31,
+    "title": "A Parallel Hardware Architecture for Quantum Annealing Algorithm Acceleration",
+    "year": "2018",
+    "tags": "quantum annealing - hardware acceleration - parallel architecture",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 38,
+    "title": "The SeqAn C++ template library for efficient sequence analysis: A resource for programmers",
+    "year": "2017",
+    "tags": "C++ - Data structures - NGS analysis - Software libraries",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://www.sciencedirect.com/science/article/pii/S0168165617315420?via%3Dihub",
+    "notebookLmLink": null
+  },
+  {
+    "id": 37,
+    "title": "An efficient MPI implementation for multi-core neuromorphic platforms",
+    "year": "2017",
+    "tags": "GALS - MPI - Multicore system - Neuromorphic Hardware",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://iris.polito.it/handle/11583/2680585",
+    "notebookLmLink": null
+  },
+  {
+    "id": 36,
+    "title": "A convolutional neural network fully implemented on FPGA for embedded platforms",
+    "year": "2017",
+    "tags": "Alex-Net - CNN - CNN on FPGA - Convolutional Neural Network - FPGA - High Level Synthesis",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 41,
+    "title": "Toolchain integration of runtime variability and aging awareness in multicore platforms",
+    "year": "2016",
+    "tags": "toolchain - runtime variability - aging awareness - multicore",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 40,
+    "title": "IsomiR-SEA: An RNA-Seq analysis tool for miRNAs/isomiRs expression level profiling and miRNA-mRNA interaction sites evaluation",
+    "year": "2016",
+    "tags": "Expression level - IsomiR - MiRNA - MiRNA-mRNA interaction site",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://link.springer.com/article/10.1186/s12859-016-0958-0",
+    "notebookLmLink": null
+  },
+  {
+    "id": 39,
+    "title": "Data and Commands Communication Protocol for Neuromorphic Platform Configuration",
+    "year": "2016",
+    "tags": "configuration - many core - neuromorphic - spinnaker",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 43,
+    "title": "Top-Down Profiling of Application Specific Many-core Neuromorphic Platforms",
+    "year": "2015",
+    "tags": "Many-core - Multi-chip - Neuromorphic - Profiling",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 42,
+    "title": "Protein alignment systolic array throughput optimization",
+    "year": "2015",
+    "tags": "CMOS - Interleaving - Protein alignment - Smith-Waterman (S-W) - Systolic arrays (SAs)",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 45,
+    "title": "Effective Evaluation of Clustering Algorithms on Single-Cell CNA data",
+    "year": "2012",
+    "tags": "benchmarking - clustering - CNA - copy-number - single-cell",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://iris.unimore.it/handle/11380/1240396",
+    "notebookLmLink": null
+  },
+  {
+    "id": 44,
+    "title": "Protein alignment HW/SW optimizations",
+    "year": "2012",
+    "tags": "protein alignment - hardware optimization - software optimization",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 47,
+    "title": "Mapping Spiking Neural Networks on Multi-core Neuromorphic Platforms: Problem Formulation and Performance Analysis",
+    "year": "2011",
+    "tags": "Graph mapping - Multicore neuromorphic architectures - Spiking neural networks",
+    "hasReadOnline": true,
+    "description": null,
+    "readOnlineLink": "https://inria.hal.science/hal-02321774",
+    "notebookLmLink": null
+  },
+  {
+    "id": 46,
+    "title": "Efficient Solution Validation of Constraint Satisfaction Problems on Neuromorphic Hardware: The Case of Sudoku Puzzles",
+    "year": "2011",
+    "tags": "Constraint satisfaction problem (CSP) - GeNN - neuromorphic computing - spiking neural network (SNN) - SpiNNaker - sudoku",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 49,
+    "title": "Personalized Mental State Evaluation in Human-Robot Interaction using Federated Learning",
+    "year": "2010",
+    "tags": "Data synchronization - Federated Learning (FL) - Human-Robot Interaction (HRI) - Mental State Estimation - Personalization - Physiological Signals",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 48,
+    "title": "NanoMagnet Logic: An architectural level overview",
+    "year": "2010",
+    "tags": "nanomagnet logic - architecture - overview",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 51,
+    "title": "Variable-precision neuromorphic state space model for on-edge activity classification",
+    "year": "2009",
+    "tags": "Edge AI - Model compression - Neuromorphic computing - State space model",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  },
+  {
+    "id": 50,
+    "title": "RISC-V Processor Technologies for Aerospace Applications in the ISOLDE Project",
+    "year": "2009",
+    "tags": "High Performance Computing - Power Modeling and Control - RISC-V - Space Applications",
+    "hasReadOnline": false,
+    "description": null,
+    "readOnlineLink": null,
+    "notebookLmLink": null
+  }
+]

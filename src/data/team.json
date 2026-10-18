@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "Gianvito Urgese",
+    "role": "Associate Professor, PI",
+    "color": "orange",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/gianvito-urgese-5bb2668a/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 2,
+    "name": "Vittorio Fra",
+    "role": "RTD-A",
+    "color": "red",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/vittorio-fra-1766171ba/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 3,
+    "name": "Riccardo Pignari",
+    "role": "Ph.D. Student",
+    "color": "blue",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/riccardo-pignari/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 4,
+    "name": "Walter Gallego Gomez",
+    "role": "Ph.D. Student",
+    "color": "orange",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/waltergallegog/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 5,
+    "name": "Andrea Pignata",
+    "role": "Ph.D. Student",
+    "color": "red",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/andrea-pignata-244b9a231/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 6,
+    "name": "Giuseppe Fanuli",
+    "role": "Research Assistant",
+    "color": "orange",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/giuseppe-fanuli-211654161/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 7,
+    "name": "Michelangelo Barocci",
+    "role": "Ph.D. Student",
+    "color": "blue",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/mbarocci/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 8,
+    "name": "Benedetto Leto",
+    "role": "Research Assistant",
+    "color": "red",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/benedetto-leto/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 9,
+    "name": "Salvatore Tilocca",
+    "role": "Research Assistant",
+    "color": "blue",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/salvatore-tilocca-ab1640216/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 10,
+    "name": "Francesco Guarino",
+    "role": "Research Assistant",
+    "color": "orange",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/francesco-guarino-93305589/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  },
+  {
+    "id": 11,
+    "name": "Nicola Cassetta",
+    "role": "Research Assistant",
+    "color": "red",
+    "avatar": null,
+    "linkedin": "https://www.linkedin.com/in/ncl-cassetta/",
+    "github": null,
+    "orcid": null,
+    "polmin": null
+  }
+]

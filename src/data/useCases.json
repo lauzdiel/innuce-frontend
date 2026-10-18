@@ -1,0 +1,229 @@
+[
+  {
+    "id": 1,
+    "cardType": "card-448",
+    "image": "uc_fpga.webp",
+    "title": "Implementation of a Recurrent SNN digital accelerator on FPGA",
+    "description": "Neuromorphic hardware exploration made easy through Python-configurable FPGA deployment of the ReckOn Recurrent SNN accelerator.",
+    "content": "This research shows how the adaptability of modern FPGA systems can be used for exploring neuromorphic computing solutions.",
+    "keywords": [
+      "Spiking Neural Networks",
+      "Neuromorphic Computing",
+      "AIoT",
+      "Edge-AI",
+      "Codesign",
+      "ReckOn"
+    ],
+    "frameworks": [
+      "ReckOn",
+      "PyTorch",
+      "smTorch"
+    ],
+    "detailHeroImage": "uc_fpga.webp",
+    "detailSections": [
+      {
+        "heading": "A Full-stack environment",
+        "text": "The development of the ReckOnFPGA project was founded on several levels of abstraction: starting from the lowest level, the Hardware stack, up to the Pyhon code that allows to run the experiments. The former describes the neuromorphic accelerator that implements the spiking neural network, the AER decoder that bridges and transfers data to and from the accelerator, and the AXI-interfaced peripherals native of system based on AMD Zynq Ultrascale technology. The latter on the other hand leverages the PYNQ open-source framework: the pynq Python library allows to access the HW Overlay and the AXI memory mapped regions to control the AXI interface IPs implemented through Vivado.",
+        "image": "us1_p1.webp"
+      },
+      {
+        "heading": "Python development framework",
+        "text": "To properly use the underlying hardware, it is necessary to correctly configure the AXI-BRAM (used to temporarily offload batches of samples), the AXI-QUADSPI (used to configure ReckOn through its SPI interface) and the AXI-GPIO (to exchange control signals with the AER decoder) IPs. Once configured, the initial phase of the experiment can begin, where the configuration registers are written through the SPI. The specific values depend on the experiment, that's why it's possible to send each parameter singularly or through an external file. Once the hardware is configured the experiments can begin: the script automatically reads the spike-encoded data and the samples' labels from text files and offloads them in batches on the intermediate BRAM, ready to be fetched. This operation iterates for each epoch (Training, Validation or Test) until the target number of epochs is reached. At the end of each epoch the resulting inference accuracy is read through an AXI-accessible and addressable Register File.",
+        "image": "us1_p2.webp"
+      },
+      {
+        "heading": "Experiments automation",
+        "text": "The exploration of the search space concerning an experiment hyperparameters is facilitated by the NNI (Neural Network Intelligence) framework: with a simple script running on a host PC it's possible to automate the experiments concurrently on multiple boards and to visualize the results on the browser."
+      },
+      {
+        "heading": "Braille digits recognition",
+        "text": "The architecture has been validated by using the online learning capability of ReckOn to classify Braille digits obtained through sensorized fingertips. We performed classification on 3 and 4-classes subsets, using digits A, E and U in the first case, obtaining 90% accuracy on the test set, and A, E, U and Space in the second, where we obtained 80% accuracy on the test set. Results are in Figure 5. We plan to improve the results by integrating progressively more digits into the classification task to being able to compare the performances of our architecture with commercial neuromorphic hardware."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "cardType": "card-330",
+    "image": "uc_tracking.webp",
+    "title": "Positioning & Tracking Enhancement through a Spiking Legendre Memory Unit (L²MU)",
+    "description": "Using only IMU data, L²MU achieves precise localization in GPS-denied or constrained environments, enabling dependable tracking even in complex scenarios.",
+    "content": "As neuromorphic computing advances toward energy-efficient, brain-inspired models, a key challenge remains: bridging the gap between spiking architectures and real-world deployment on conventional edge devices. Traditional Spiking Neural Networks (SNNs) require encoding stages to convert real-valued inputs into spikes, often complicating their integration with typical sensors and limiting their accessibility beyond specialized hardware.\n\nThis work presents the L²MU, a fully spiking reimplementation of the Legendre Memory Unit (LMU), constructed with populations of Leaky Integrate-and-Fire (LIF) neurons. Designed for Human Activity Recognition (HAR) using raw smartwatch signals, the L²MU integrates an encoding module that eliminates the need for preprocessing or spike encoding. Importantly, it enables real-time inference directly on commercial ARM-based devices such as Raspberry Pi boards and STM32MP1.",
+    "keywords": [
+      "Neuromorphic Computing",
+      "Human Activity Recognition",
+      "Temporal Learning",
+      "Spiking Neural Networks",
+      "Legendre Memory Unit"
+    ],
+    "frameworks": [
+      "PyTorch",
+      "smTorch",
+      "NeuroBench"
+    ],
+    "detailHeroImage": "uc_tracking.webp",
+    "detailSections": [
+      {
+        "image": "us2_p1.webp"
+      },
+      {
+        "heading": "Impact",
+        "text": "This work extends the applicability of neuromorphic computing to real-world edge scenarios by showing that a fully spiking LMU can classify raw sensor data with high accuracy and low energy consumption, without encoding stages. The L²MU thus establishes a practical and scalable route for deploying SNNs in Internet-of-Things (IoT) and wearable applications.",
+        "image": "us2_p2.webp"
+      },
+      {
+        "heading": "Results",
+        "text": "The L²MU model, tested on a 7-class subset of the WISDM HAR dataset, achieved 93.91% test accuracy with Leaky neurons and 93.84% with Synaptic neurons after compression and fine-tuning. Deployment on commercial edge boards (STM32MP1, Raspberry Pi 3B+, 4B) showed inference times under 0.13 seconds and energy use below 270 mJ for Leaky models. Memory footprint was significantly reduced (up to 79.5%), and the number of effective synaptic operations per sample dropped by up to 40.25%, confirming the suitability of the model for efficient, real-time on-device computation."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "cardType": "card-full",
+    "image": "uc_navigation.webp",
+    "title": "Navigation Enhancement with L²MU & EKF",
+    "description": "Spiking Neural Networks boost real-time navigation with ultra-low memory usage and power consumption, ideal for resource-constrained robots.",
+    "content": "The LIF-based Legendre Memory Unit (L²MU) enhances positioning systems by integrating with an Extended Kalman Filter (EKF) for improved navigation and tracking. By combining IMU and GPS data, L²MU refines position estimates, offering a strong balance of accuracy and efficiency. Optimized for resource-limited applications, L²MU provides real-time corrections, making it an ideal solution for robots operating in both indoor and outdoor environments.\n\nAs a spiking state-space model, the L²MU is employed to predict the state of an EKF and perform dead-reckoning in mixed indoor-outdoor scenarios with robots equipped with multi-sensor configurations. By predicting velocity, the L²MU allows the EKF to estimate position and velocity more accurately, using GPS measurements to further refine these estimates. Trained on the Agrobot dataset with IMU data recorded at 100 Hz and synthetic GPS data, the model demonstrates its capability to enhance position estimation in controlled environments.\n\nWhen integrated with the EKF, L²MU reduces memory usage and improves system efficiency while maintaining a high level of accuracy. This makes it particularly suitable for resource-constrained applications, where both performance and memory optimization are essential.",
+    "keywords": [
+      "Neuromorphic Computing",
+      "Spiking Neural Networks",
+      "GPS",
+      "EKF",
+      "Sensor Fusion",
+      "Inertial Odometry",
+      "Legendre Memory Unit",
+      "Dead Reckoning"
+    ],
+    "frameworks": [
+      "PyTorch",
+      "smTorch"
+    ],
+    "detailHeroImage": "uc_navigation.webp",
+    "detailSections": [
+      {
+        "heading": "Results",
+        "text": "The L2MU model, integrated with an Extended Kalman Filter (EKF), is designed to excel in agricultural environments where real-time position and speed estimation are vital. These settings often involve limited computational resources, so the combination of L2MU and EKF offers a powerful solution. L2MU enhances the EKF by reducing memory usage by up to 95%, while still maintaining high accuracy in estimating position and velocity. This makes it ideal for precision farming and autonomous vehicles, where both efficiency and performance are critical for optimizing agricultural tasks in resource-constrained areas."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "cardType": "card-256",
+    "image": "uc_semantic.webp",
+    "title": "Hi-Co Network for Semantic Memory on Loihi 2",
+    "description": "To study how the brain works, neuroscientists rely on Spiking Neural Networks (SNNs) models that can be run efficiently on Neuromorphic Hardware.",
+    "content": "To study how the brain works, neuroscientists rely on simplified models that help draw meaningful conclusions. These models are often neural networks, and more recently, Spiking Neural Networks (SNNs), which more closely resemble biological processes.\n\nOne of the key areas of neuroscience research is memory consolidation: the process by which the brain stabilizes and integrates new information over time. This mechanism allows humans to learn without overwriting previously acquired knowledge. This biological ability is mirrored in the machine learning approach of continual learning (CL), which aims to enable artificial agents to learn from a stream of tasks without catastrophic forgetting. Continual learning is particularly important in robotics, where autonomous systems must adapt to changing environments, learn new tasks, and incorporate sensorimotor feedback over time.\n\nTo investigate these processes, multiple research groups have started a collaboration in the context of EBRAINS-Italy. In particular, researchers from the Sant'Anna School of Advanced Studies (SSSA), the Consiglio Nazionale Ricerche (CNR) and the National Institute for Nuclear Physics (INFN) have developed an SNN model and tested it under both classical and continual learning conditions.\n\nOur group is working on porting the model onto hardware designed specifically for SNNs: the Loihi 2 neuromorphic platform. Loihi 2 supports essential features required by the model, such as Spike-Timing Dependent Plasticity (STDP), delayed synapses, and stochastic connection and spike generation.\n\nBy implementing this SNN on Loihi 2, we aim to explore the feasibility of running biologically inspired models for continual learning on neuromorphic hardware. This not only offers potential energy efficiency gains but also provides a platform from which neuroscientists can deepen their understanding of the brain's inner workings.",
+    "keywords": [
+      "Brain's memory consolidation",
+      "Neuroscience",
+      "Neuromorphic Computing",
+      "Continual learning",
+      "Spiking Neural Networks"
+    ],
+    "frameworks": [
+      "Lava",
+      "Brian2"
+    ],
+    "detailHeroImage": "uc_semantic.webp",
+    "detailSections": [
+      {
+        "image": "us4_p1.webp"
+      },
+      {
+        "heading": "Approach",
+        "text": "To port the network to Loihi 2, we use the Lava framework and the hardware compatibility layer nxcore.\n\nFrom the original Brian implementation, we identify the key software elements required and find suitable counterparts in Lava and Loihi 2. If no counterpart is found, we implement it. The following common elements have been identified so far:",
+        "image": "us4_p2.webp"
+      },
+      {
+        "text": "Besides the Brian implementation we also take inspiration from previous works that employ the Lava and Loihi 2 STDP capabilities, such as https://ieeexplore.ieee.org/abstract/document/10802683"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "cardType": "card-256",
+    "image": "uc_braille.webp",
+    "title": "Tactile Braille Recognition with L²MU on Braille letters",
+    "description": "A spiking L²MU model processes tactile event-sequences from the Braille-letters dataset to classify Braille characters efficiently.",
+    "content": "The growing interest in neuromorphic computing stems from its potential to address the energy bottlenecks of traditional machine learning, particularly for tasks involving temporal dynamics. State Space Models (SSMs), with their foundation in differential equations and latent variable dynamics, offer a mathematically grounded approach for modeling time-dependent signals. However, integrating SSMs with biologically plausible computing frameworks remains a largely unexplored area.\n\nIn this work, we propose a fully spiking variant of the Legendre Memory Unit (LMU), termed L²MU, which reformulates the original architecture using populations of Leaky Integrate-and-Fire (LIF) neurons. This transformation not only enables native implementation on neuromorphic hardware but also retains the temporal processing capabilities of the original SSM formulation.\n\nWe benchmark our L²MU model on the Braille letter recognition task, an event-based, second-long spatio-temporal classification challenge. Our results demonstrate that L²MU surpasses recurrent SNN baselines, achieving state-of-the-art accuracy while maintaining a high degree of sparsity and computational efficiency. These findings support the feasibility of spiking SSMs as scalable, low-power models for temporal inference in neuromorphic systems.",
+    "keywords": [
+      "Spiking Neural Networks",
+      "Tactile classification",
+      "Neuromorphic Computing",
+      "Temporal encoding",
+      "Assistive technology",
+      "Legendre Memory Unit"
+    ],
+    "frameworks": [
+      "NeuroBench",
+      "PyTorch"
+    ],
+    "detailHeroImage": "uc_braille.webp",
+    "detailSections": [
+      {
+        "heading": "Impact",
+        "text": "This work introduces a fully spiking implementation of the LMU, showing that neuromorphic SSMs can outperform traditional SNNs on real-world spatio-temporal tasks. With zero multiply-accumulate operations, high sparsity, and state-of-the-art accuracy on event-based datasets, L2MU paves the way for energy-efficient, hardware-compatible models suited for on-device temporal processing."
+      },
+      {
+        "heading": "Results",
+        "text": "The proposed L²MU architecture was evaluated on the event-based Braille letter recognition task in both its full 27-class version and a 7-class subset. Following extensive hyperparameter optimization, the L²MU achieved a test accuracy of 85.55% on the full dataset and 97.14% on the 7-class subset, outperforming previous state-of-the-art models.\n\nBeyond accuracy, the model demonstrated strong neuromorphic properties: activation sparsity exceeded 96%, connection sparsity reached up to 21%, and no multiply-accumulate operations (MACs) were required, confirming the efficiency of the spike-based computation. These results underscore L²MU's effectiveness not only in classification performance but also in alignment with neuromorphic design principles."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "cardType": "card-256",
+    "image": "uc_genn.webp",
+    "title": "From GeNN Simulations to SpiNNaker Deployment",
+    "description": "An end-to-end approach to CSP validation using spiking neural networks, combining GPU-based simulation in GeNN with real-time execution on SpiNNaker.",
+    "content": "Spiking Neural Networks (SNNs) and neuromorphic computing platforms are gaining traction as energy-efficient alternatives for solving complex computational tasks. Among them, Constraint Satisfaction Problems (CSPs)—such as Sudoku—offer a valuable testbed for evaluating real-world applicability. Traditional approaches rely on external systems to validate the solutions found by neuromorphic solvers, adding latency, power consumption, and complexity. This project introduces a novel fully spiking pipeline capable of validating solutions directly on-chip, significantly reducing the need for external data processing.",
+    "keywords": [
+      "Constraint satisfaction problem",
+      "Neuromorphic Computing",
+      "Spiking Neural Networks",
+      "GeNN"
+    ],
+    "frameworks": [
+      "GeNN",
+      "Brian2"
+    ],
+    "detailHeroImage": "uc_genn.webp",
+    "detailSections": [
+      {
+        "heading": "Application Principle",
+        "text": "The project tackles a classic logic puzzle—Sudoku—to explore how brain-inspired computing systems can be used to solve and validate complex problems. This type of puzzle is an example of a Constraint Satisfaction Problem (CSP), where a solution must meet specific rules.\n\nTo carry out this experiment, a Spiking Neural Network (SNN) was created and tested using GeNN, a high-performance simulator running on GPUs. Once the approach was validated in simulation, the same model was deployed on a neuromorphic hardware platform called SpiNNaker, designed to mimic the brain's energy-efficient way of processing information.\n\nWhat makes this project unique is the ability to not only solve the puzzle using spikes (like neurons in the brain) but also to validate the solution directly within the neural network, without needing to transfer data to a traditional computer. This end-to-end, fully spiking approach is designed to make future smart systems faster, more autonomous, and ultra-low-power."
+      },
+      {
+        "heading": "Approach",
+        "text": "To solve and validate Sudoku puzzles entirely within a spiking neural network, the project introduces a multi-stage architecture inspired by the way biological brains process and filter information.\n\nThe core of the system is a spiking solver, where each Sudoku cell is represented by specialized groups of spiking neurons. These neurons interact through inhibitory connections, ensuring that each number appears only once per row, column, and block—exactly as required by the puzzle rules.\n\nTo enhance performance and accuracy, the system includes additional functional blocks:\n• Constraint Stabilization: ensures the initial puzzle clues remain fixed throughout the solving process.\n• Polisher: filters noisy or irrelevant spikes, keeping only the strongest signals.\n• NetChecker: verifies that all puzzle constraints are satisfied in real time, using only spike-based communication.\n• If block: monitors the network's state and shuts down the solver once a valid solution is found, avoiding unnecessary computation.\n• Memory block: captures the final network activity and stores the validated solution.\n\nAll of these stages were first tested using the GeNN simulator on GPU, and then successfully implemented on the SpiNNaker neuromorphic hardware, which runs the entire process with extremely low energy consumption."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "cardType": "card-full",
+    "image": "uc_gesture.webp",
+    "title": "Real Time Event-Based Visual Gesture Recognition on Neuromorphic Chips",
+    "description": "Real-time recognition of rock-scissor-paper gestures using event-streams acquired from various DVS cameras, leveraging the asynchronous nature of events for efficient inference and spiking neural networks.",
+    "content": "Event-based perception is transforming how machines interpret motion, unlocking ultra-low-latency intelligence far beyond the constraints of frame-based vision. Among the clearest demonstrations of this shift is real-time recognition—an intuitive, dynamic task that naturally aligns with the asynchronous flow of event-driven sensors. In this work, we explore this frontier through a practical challenge: recognizing rock-scissor-paper gestures using streams from multiple Dynamic Vision Sensors (DAVIS, Explorer, Speck), and deploying the resulting models on two neuromorphic computing platforms—Akida-1000 and SynSense Speck.\n\nTo meet strict real-time requirements, we design both a lightweight convolutional neural network (3 Conv layer and 2 Dense) for event-driven computation. Data collection is synchronized and version-controlled across devices, ensuring reproducibility and consistent benchmarking. Evaluation metrics—latency, power consumption, and energy per inference—are captured via on-board APIs and logged systematically for full traceability. The final, best-performing models are then packaged and released in a Model Zoo for reuse and long-term reproducibility.",
+    "keywords": [
+      "Spiking Neural Networks",
+      "Neuromorphic Computing",
+      "Event Camera"
+    ],
+    "frameworks": [
+      "NeuroBench",
+      "PyTorch"
+    ],
+    "detailHeroImage": "uc_gesture.webp",
+    "detailSections": [
+      {
+        "heading": "Impact",
+        "text": "The resulting deployed systems achieve performance comparable to CPU/GPU baselines while dramatically lowering average power consumption. This work demonstrates the feasibility of real-time, event-based gesture recognition on commercial neuromorphic hardware, validating a full MLOps pipeline from data capture and model training to deployment and energy-centric evaluation. By unifying event-driven sensing with efficient, hardware-optimized neural models, this project highlights a scalable path toward low-power, on-device intelligence for dynamic human-machine interaction."
+      },
+      {
+        "heading": "Results",
+        "text": "The deployed models achieved 91.5% accuracy on Speck and 93.2% on Akida, with performance comparable to the CPU/GPU reference while substantially reducing average power consumption.\n\nBeyond accuracy, the model deployed on Akida uses almost 5x times less power per inference also due to an average 60% sparsity among the layers compared to the classical model."
+      }
+    ]
+  }
+]

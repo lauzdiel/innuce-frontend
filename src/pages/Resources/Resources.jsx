@@ -211,11 +211,23 @@ function Resources() {
                               <img src={sourceOkIcon} alt="Source OK" className="w-[16px] h-[16px]" />
                             </button>
                             <button
-                              className="bg-transparent border border-solid border-[rgba(255,255,255,0.2)] text-[#7FA8B8] py-[12px] px-[20px] rounded-[8px] text-[14px] cursor-pointer hover:border-white hover:text-white"
-                              style={{ transition: 'border-color 0.2s, color 0.2s' }}
+                              type="button"
+                              aria-label="Collapse summary"
+                              className="bg-transparent border border-solid border-[rgba(127,168,184,0.3)] text-[#7FA8B8] hover:text-[#FF6B00] hover:border-[#FF6B00] hover:bg-[rgba(255,107,0,0.05)] py-[12px] px-[18px] rounded-[8px] cursor-pointer flex items-center justify-center transition-all duration-200"
                               onClick={() => setExpandedPaperId(null)}
                             >
-                              Collapse
+                              <svg 
+                                width="16" 
+                                height="16" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                strokeWidth="2.5" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round"
+                              >
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                              </svg>
                             </button>
                           </div>
                         </motion.div>

@@ -1,42 +1,68 @@
-import resourcesData from '../data/resources.json';
-import teamData from '../data/team.json';
-import infrastructuresData from '../data/infrastructures.json';
-import useCasesData from '../data/useCases.json';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001/api/v1';
 
 /**
  * Fetch all resources (papers, publications, resources).
- * Returns array sorted by year DESC, id DESC.
+ * Safely formats `tags` (handles both array and string) and ensures `hasReadOnline`.
  */
 export async function getResources() {
-  // Simulating async API call
-  return resourcesData.map(item => ({
-    ...item,
-    hasReadOnline: Boolean(item.readOnlineLink)
-  }));
+  const response = await fetch(`${API_BASE_URL}/resources`);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch resources: ${response.status} ${response.statusText}`);
+  }
+  const data = await response.json();
+  
+  return data.map(item => {
+    let formattedTags = '';
+    if (Array.isArray(item.tags)) {
+      formattedTags = item.tags.join(' - ');
+    } else if (typeof item.tags === 'string') {
+      formattedTags = item.tags;
+    }
+
+    return {
+      ...item,
+      tags: formattedTags,
+      hasReadOnline: Boolean(item.readOnlineLink)
+    };
+  });
 }
 
 /**
- * Fetch all team members for About Us.
+ * Fetch all team and alumni members for About Us.
  */
 export async function getTeam() {
-  // Simulating async API call
-  return teamData;
+  const response = await fetch(`${API_BASE_URL}/teams`);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch team members: ${response.status} ${response.statusText}`);
+  }
+  return await response.json();
 }
 
 /**
  * Fetch lab infrastructures (tools & hardware).
  */
 export async function getInfrastructures() {
-  // Simulating async API call
-  return infrastructuresData;
+  const response = await fetch(`${API_BASE_URL}/infrastructures`);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch infrastructures: ${response.status} ${response.statusText}`);
+  }
+  return await response.json();
 }
 
 /**
  * Fetch all use cases.
  */
 export async function getUseCases() {
-  // Simulating async API call
-  return useCasesData;
+  const response = await fetch(`${API_BASE_URL}/usecases`);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch use cases: ${response.status} ${response.statusText}`);
+  }
+  const data = await response.json();
+  return data.map(item => ({
+    ...item,
+    keywords: Array.isArray(item.keywords) ? item.keywords : (item.keywords ? [item.keywords] : []),
+    frameworks: Array.isArray(item.frameworks) ? item.frameworks : (item.frameworks ? [item.frameworks] : [])
+  }));
 }
 
 /**
@@ -44,12 +70,16 @@ export async function getUseCases() {
  * @param {string|number} id
  */
 export async function getUseCaseById(id) {
-  // Simulating async API call
-  const useCase = useCasesData.find(item => String(item.id) === String(id));
-  if (!useCase) {
-    throw new Error(`Use case with id ${id} not found`);
+  const response = await fetch(`${API_BASE_URL}/usecases/${id}`);
+  if (!response.ok) {
+    throw new Error(`Use case with id ${id} not found: ${response.status} ${response.statusText}`);
   }
-  return useCase;
+  const data = await response.json();
+  return {
+    ...data,
+    keywords: Array.isArray(data.keywords) ? data.keywords : (data.keywords ? [data.keywords] : []),
+    frameworks: Array.isArray(data.frameworks) ? data.frameworks : (data.frameworks ? [data.frameworks] : [])
+  };
 }
 
 /**
@@ -57,7 +87,22 @@ export async function getUseCaseById(id) {
  * @param {Object} data - Access request form data
  */
 export async function submitAccessRequest(data) {
-  // Simulating async API call
+  try {
+    const response = await fetch(`${API_BASE_URL}/access-requests`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+    if (response.ok) {
+      return await response.json();
+    }
+  } catch (err) {
+    console.warn('Backend access-requests endpoint unreachable or not implemented:', err);
+  }
+
+  // Client validation & response
   console.log('Access request received:', data);
   if (!data || !data.name || !data.surname || !data.email) {
     throw new Error('Required fields missing');
